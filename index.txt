@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphed Insights | K-12 Non-Profit Data & BI Consulting</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e40af', // Deep Blue
+                        'secondary-green': '#10b981', // Emerald Green
+                        'accent-yellow': '#fbbf24', // Amber
+                        'bg-light': '#f9fafb', // Light Gray background
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Styles for aesthetic polish */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+        .section-header {
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background-color: #10b981; /* Accent Green */
+            border-radius: 9999px;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(16, 185, 129, 0.9)), url('https://placehold.co/1200x600/1e40af/ffffff?text=Actionable+Data+for+K-12+Success');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <!-- Load Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-primary-blue">Graphed <span class="text-secondary-green">Insights</span></h1>
+            <nav class="hidden md:block">
+                <a href="#services" class="text-gray-600 hover:text-primary-blue mx-3 font-semibold transition duration-150">Services</a>
+                <a href="#expertise" class="text-gray-600 hover:text-primary-blue mx-3 font-semibold transition duration-150">Expertise</a>
+                <a href="#contact" class="text-white bg-secondary-green hover:bg-emerald-600 py-2 px-4 ml-4 rounded-lg shadow-lg font-semibold transition duration-150">Get Started</a>
+            </nav>
+            <button class="md:hidden text-primary-blue text-2xl" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-bg text-white py-20 sm:py-32 rounded-b-xl shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-accent-yellow font-semibold text-lg mb-3 uppercase tracking-wider">Data-Driven Strategy for Non-Profits</p>
+            <h2 class="text-5xl sm:text-6xl font-extrabold leading-tight mb-6">
+                Turn K-12 Data <br class="sm:hidden"> into Measurable Impact.
+            </h2>
+            <p class="text-xl max-w-3xl mx-auto mb-10 opacity-90">
+                We empower K-12 non-profits and charter organizations by integrating complex data sources and transforming them into clear, actionable dashboards for boards, funders, and staff.
+            </p>
+            <a href="#contact" class="inline-block bg-accent-yellow text-primary-blue hover:bg-amber-400 font-bold py-3 px-8 rounded-xl shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out uppercase tracking-wider">
+                Book a Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. Services Section -->
+    <section id="services" class="py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-extrabold text-gray-900 section-header mx-auto w-fit">Our 4 Pillars of Data Success</h3>
+                <p class="mt-4 text-xl text-gray-600">Comprehensive services to build, manage, and leverage your educational data infrastructure.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Service 1: Data Visualization & BI -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-4 border-primary-blue transform hover:scale-[1.02] transition duration-300">
+                    <div class="text-4xl text-primary-blue mb-4">📊</div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-3">1. Visualize & Strategize</h4>
+                    <p class="text-gray-600 mb-4">Transform raw numbers into compelling, interactive dashboards that clearly communicate outcomes to non-technical stakeholders.</p>
+                    <div class="mt-4">
+                        <p class="font-semibold text-sm text-gray-700">Key Tool:</p>
+                        <span class="inline-block bg-primary-blue/10 text-primary-blue text-xs font-semibold px-3 py-1 rounded-full">Microsoft Power BI (Essential)</span>
+                    </div>
+                </div>
+
+                <!-- Service 2: Data Integration & Querying -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-4 border-secondary-green transform hover:scale-[1.02] transition duration-300">
+                    <div class="text-4xl text-secondary-green mb-4">🔗</div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-3">2. Integrate & Structure</h4>
+                    <p class="text-gray-600 mb-4">Build the robust foundation needed for accurate reporting by efficiently combining disparate datasets from all client sources.</p>
+                    <div class="mt-4">
+                        <p class="font-semibold text-sm text-gray-700">Key Tool:</p>
+                        <span class="inline-block bg-secondary-green/10 text-secondary-green text-xs font-semibold px-3 py-1 rounded-full">Advanced SQL Querying</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: Data Source Management (CRMs & SIS) -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-4 border-accent-yellow transform hover:scale-[1.02] transition duration-300">
+                    <div class="text-4xl text-accent-yellow mb-4">⚙️</div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-3">3. Source & Manage</h4>
+                    <p class="text-gray-600 mb-4">Expert navigation of K-12 specific data systems to ensure complete and timely extraction of student and donor records.</p>
+                    <div class="mt-4">
+                        <p class="font-semibold text-sm text-gray-700">Expertise:</p>
+                        <span class="inline-block bg-accent-yellow/10 text-accent-yellow text-xs font-semibold px-3 py-1 rounded-full mr-2">Salesforce NPSP</span>
+                        <span class="inline-block bg-accent-yellow/10 text-accent-yellow text-xs font-semibold px-3 py-1 rounded-full">PowerSchool/Infinite Campus</span>
+                    </div>
+                </div>
+
+                <!-- Service 4: Survey & Data Collection -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-4 border-gray-400 transform hover:scale-[1.02] transition duration-300">
+                    <div class="text-4xl text-gray-500 mb-4">📝</div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-3">4. Design & Collect</h4>
+                    <p class="text-gray-600 mb-4">Design methodologically sound surveys and data collection tools for program evaluation, outcome tracking, and grant reporting.</p>
+                    <div class="mt-4">
+                        <p class="font-semibold text-sm text-gray-700">Key Tools:</p>
+                        <span class="inline-block bg-gray-400/10 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full mr-2">Qualtrics</span>
+                        <span class="inline-block bg-gray-400/10 text-gray-700 text-xs font-semibold px-3 py-1 rounded-full">Jotform / Google Forms</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Technical Expertise Section (Detailed Tooling) -->
+    <section id="expertise" class="py-16 lg:py-24 bg-primary-blue/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-extrabold text-gray-900 section-header mx-auto w-fit">Deep-Dive Technical Expertise</h3>
+                <p class="mt-4 text-xl text-gray-600">We speak the language of your data systems and use industry-leading tools.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- Data Integration Focus -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h4 class="text-2xl font-bold text-primary-blue mb-4 flex items-center">
+                        <span class="text-3xl mr-3">🛠️</span> Data Integration & Warehousing
+                    </h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-secondary-green font-bold mr-2 text-lg">›</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">SQL Proficiency (All Major Platforms)</p>
+                                <p class="text-sm text-gray-600">Efficiently join, clean, and extract complex data sets using SQL, covering environments like SSMS, PostgreSQL, and MySQL.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-secondary-green font-bold mr-2 text-lg">›</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Student Information Systems (SIS)</p>
+                                <p class="text-sm text-gray-600">Expertise in data extraction from platforms including **PowerSchool** and **Infinite Campus** (assessment, attendance, demographic data).</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-secondary-green font-bold mr-2 text-lg">›</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">CRM & Donor Systems</p>
+                                <p class="text-sm text-gray-600">Fluent in accessing supporter and funding data from platforms like **Salesforce Nonprofit Cloud (NPSP)** and **Blackbaud (Raiser's Edge NXT)**.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Visualization & Collection Focus -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h4 class="text-2xl font-bold text-secondary-green mb-4 flex items-center">
+                        <span class="text-3xl mr-3">💻</span> Reporting & Collection Platforms
+                    </h4>
+                    <ul class="space-y-4">
+                         <li class="flex items-start">
+                            <span class="text-primary-blue font-bold mr-2 text-lg">›</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Power BI Excellence</p>
+                                <p class="text-sm text-gray-600">Building collaborative, refreshed dashboards with **Power BI Pro** licensing readiness for seamless sharing with boards and grantors.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary-blue font-bold mr-2 text-lg">›</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Advanced Survey Design (Qualtrics)</p>
+                                <p class="text-sm text-gray-600">Designing complex evaluation instruments with advanced logic for high-fidelity research and evaluation programs.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-primary-blue font-bold mr-2 text-lg">›</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Simple & Compliant Forms</p>
+                                <p class="text-sm text-gray-600">Using **Jotform** and **Google Forms** for quick, affordable, and compliant (FERPA/HIPAA-ready options) data collection.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Call to Action / Contact Form -->
+    <section id="contact" class="py-16 lg:py-24 bg-primary-blue text-white rounded-t-xl">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-4xl font-extrabold mb-4">Ready to See Your Data in Action?</h3>
+            <p class="text-xl opacity-90 mb-10">Stop guessing. Start measuring. Contact Graphed Insights today to schedule a free 30-minute data strategy session.</p>
+
+            <form class="bg-white p-8 rounded-xl shadow-2xl max-w-lg mx-auto text-left">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                    <input type="text" id="name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-secondary-green focus:border-secondary-green text-gray-900" placeholder="Your Name" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Work Email</label>
+                    <input type="email" id="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-secondary-green focus:border-secondary-green text-gray-900" placeholder="your.name@nonprofit.org" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-semibold mb-2">Briefly describe your challenge</label>
+                    <textarea id="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-secondary-green focus:border-secondary-green text-gray-900" placeholder="We need to track program outcomes across multiple schools..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-secondary-green text-white font-bold py-3 rounded-xl hover:bg-emerald-600 transition duration-300 shadow-lg">
+                    Request Strategy Session
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            &copy; 2025 Graphed Insights | Specialized Data Consulting for K-12 Non-Profits.
+        </div>
+    </footer>
+
+</body>
+</html>
